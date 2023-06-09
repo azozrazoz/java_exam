@@ -12,6 +12,10 @@ public class Main {
     public static List<String> ConvertToUpper(List<String> strings) {
         return strings.stream().map(String::toUpperCase).toList();
     }
+    @FunctionalInterface
+    interface Summator {
+        Integer sum(Integer a, Integer b);
+    }
     public static void main(String[] args) {
 
         // #1
@@ -37,7 +41,8 @@ public class Main {
         height = scanner.nextInt();
         rectangle.setHeight(height);
         rectangle.setWidth(width);
-        System.out.println(rectangle.calculateArea());*/
+        System.out.println(rectangle.calculateArea());
+        */
 
         // #3
 
@@ -53,7 +58,10 @@ public class Main {
 
         // #4
 
-
+        /*
+        Summator summator = (x, y) -> x + y;
+        System.out.println(summator.sum(3, 4));
+        */
 
         // #5
 
@@ -62,9 +70,7 @@ public class Main {
 
         for (String s : ConvertToUpper(languages)) {
             System.out.println(s);
-        }*/
-
-        // #6
-
+        }
+        */
     }
 }
